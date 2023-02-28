@@ -1,0 +1,176 @@
+html{
+    background-color: aqua;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  *
+{
+  margin: 0;
+  padding: 0;
+}
+
+header
+{
+  background-color: #006666;
+  height: 70px;
+  padding-left:10px;
+  padding-top: 10px;
+}
+footer>img:hover{
+  transform: rotate(180deg) scale(1.2);
+  animation-play-state:paused;
+}
+
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+    padding-top: 5px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.mijlocasi > figure{
+    margin: 5px;
+    padding: 50px 5px 50px 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.mijlocasi{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.pp
+{
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+}
+.po
+{
+    height: 400px;
+    width: 250px;
+    border: solid;
+    border-color: black;
+    
+
+}
+
+footer > img{
+  transition: transform 3s;
+  animation-name:deplasare;
+  animation-duration:7s;
+  animation-delay:0s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  position:relative;
+  right: 10px;
+  bottom: 10px;
+  height: 70px;
+}
+
+.logo_echipa
+{
+height: 203px;
+width: 150px;
+position: fixed;
+visibility: visible;
+bottom: 42px;
+right: 10px;
+}
+
+@keyframes deplasare {
+  0%{right:0%;}
+  100%{right:100%;}
+}
+footer{
+  text-align: right;
+}
+
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 70%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}

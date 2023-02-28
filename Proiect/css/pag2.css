@@ -1,0 +1,161 @@
+html{
+    background-color: aqua;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+header
+{
+  background-color: #006666;
+  height: 70px;
+  padding-left:10px;
+  padding-top: 10px;
+}
+
+main{
+  margin: 10px;
+}
+
+footer>img:hover{
+  transform: rotate(180deg) scale(1.2);
+  animation-play-state:paused;
+}
+
+
+.tabel {
+    flex: 33%;
+    padding: 5px;
+  }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .tabele1 {
+    display: flex;
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+
+footer{
+    text-align: right;
+}
+
+/*////////////////////////////////meniu dropdown///////////////////////*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+    padding-top: 5px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+
+  .dropdown .dropbtn, #buton_secret{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, #buton_secret:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  footer > img{
+    transition: transform 3s;
+    animation-name:deplasare;
+    animation-duration:7s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    position:relative;
+    right: 10px;
+    bottom: 10px;
+    height: 70px;
+}
+
+.logo_echipa
+{
+  height: 203px;
+  width: 150px;
+  position: fixed;
+  visibility: visible;
+  bottom: 42px;
+  right: 10px;
+}
+
+@keyframes deplasare {
+  0%{right:0%;}
+  100%{right:100%;}
+}
+footer{
+  text-align: right;
+}
+
+#stop
+{
+  color: #333;
+}
